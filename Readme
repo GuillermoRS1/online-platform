@@ -14,10 +14,12 @@ After this page we access the login page, where we will find a form where we mus
 password to be able to access the site. When you fill in the data, you will access the page in case the data you have entered 
 are in the database and are correct. In case you are not registered on the site, you will have a link below the form 
 to go to the registration page and create an account.
+(https://github.com/GuillermoRS1/CA4_Guillermo-Ruiz-Senso_71235/tree/master/assets/login.png)
 On the registration page you will find a form where you will have to enter your name, password and re-confirm your password.
 If the user is not already registered in the database, the user will be created and will be able to access the page immediately, but if the user is already registered, you will receive an error.
 registered, you will receive an error message. If you are already registered on the site, there is a link below the form to go to the login page and log in. 
 to the login page and log in to the site.
+(https://github.com/GuillermoRS1/CA4_Guillermo-Ruiz-Senso_71235/tree/master/assets/register.png)
 
 Once inside the site you will find the main page, which you can only access if you are logged in, if you are not logged in, it will not let you enter.
 will not let you enter. On this page you will find a form to add new tasks to the list by entering the name of the task,
@@ -29,3 +31,4 @@ corresponding information. For each task you can perform three actions:
  - Delete the task from the list.
 
 In addition, on the top left hand side of the page you will find a link to log out and leave the main page.
+(https://github.com/GuillermoRS1/CA4_Guillermo-Ruiz-Senso_71235/tree/master/assets/main.png)
