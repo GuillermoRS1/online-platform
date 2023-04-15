@@ -1,30 +1,30 @@
 CA4 --> Guillermo Ruiz Senso 71235
 
-Bienvenido a Assignments
+Welcome to Assignments
 
-Esta es una plataforma online diseñada para ayudarte a ir guardando los diferentes proyectos que te mandan, los que estan aun por 
-completar y los que ya has realizado, pudiendo poner la nota de los mismo una vez la recibas. 
+This is an online platform designed to help you keep track of the different projects you are sent, the ones you are yet to complete and the ones you have already done. 
+and the ones you have already completed, and you will be able to grade them once you receive them. 
 
 
-Al entrar en la página encontraras una pagina de bienvenida desde la cual podras acceder a la pagina de registro o de login, segun
-ya tengas una cuenta creada en la pagina o si necesitas crear una nueva.
+When you enter the site you will find a welcome page from which you can access the registration or login page, depending on whether you have already created an account on the site.
+you already have an account on the site or if you need to create a new one.
 
-Despues de esta pagina accedemos a la pagina de login, en la que encontraremos un formulario donde debemos de poner el nombre y la 
-contraseña para poder acceder a la pagina. Cuando rellenas los datos, accederas a la pagina en caso de que los datos introducidos 
-se encuentren en la base de datos y sean correctos. En caso de no estar registrado en la página, tendrás un enlace debajo del formulario 
-para poder ir a la pagina de registro y crear la cuenta.
-En la pagina de registro encontraras un formulario donde tendras que poner el nombre, la contraseña y volver a confirmar la contraseña.
-Si el usuario no se encuentra registrado en la base de datos se creara el usuario y se accedera a la pagina inmediatamente, pero si ya
-se encuentra registrado te dara error. En caso de ya estar registrado en la pagina, hay un enlace debajo del formulario para poder ir 
-a la pagina de login y logearte en la pagina.
+After this page we access the login page, where we will find a form where we must put the name and password to access the page. 
+password to be able to access the site. When you fill in the data, you will access the page in case the data you have entered 
+are in the database and are correct. In case you are not registered on the site, you will have a link below the form 
+to go to the registration page and create an account.
+On the registration page you will find a form where you will have to enter your name, password and re-confirm your password.
+If the user is not already registered in the database, the user will be created and will be able to access the page immediately, but if the user is already registered, you will receive an error.
+registered, you will receive an error message. If you are already registered on the site, there is a link below the form to go to the login page and log in. 
+to the login page and log in to the site.
 
-Una vez dentro de la pagina encontraremos la pagina principal, la cual solo podras acceder si estas logeado, en caso de lo estarlo no te
-dejara entrar. En esta pagina podras encontrar un formulario para poder añadir nuevas tareas a la lista, poniendo el nombre de la tarea,
-si ya la has completado o no y la nota si ya la tienes.
-Bajo el formulario encontraras la lista con las diferentes tareas que se encuentran en la base de datos y de las que puedes ver su 
-correspondiente información. Para cada tarea podras realizar tres acciones que son:
- - Marcar la tarea como completada.
- - Marcar la tarea como incompleta.
- - Eliminar la tarea de la lista.
+Once inside the site you will find the main page, which you can only access if you are logged in, if you are not logged in, it will not let you enter.
+will not let you enter. On this page you will find a form to add new tasks to the list by entering the name of the task,
+if you have already completed it or not and the grade if you already have it.
+Under the form you will find the list with the different tasks that are in the database and of which you can see the corresponding information. 
+corresponding information. For each task you can perform three actions:
+ - Mark the task as completed.
+ - Mark the task as incomplete.
+ - Delete the task from the list.
 
- Ademas, en la pagina podras encontrar en la parte superior izquierda un enlace para poder cerrar la sesion y salir de la pagina principal.7
+In addition, on the top left hand side of the page you will find a link to log out and leave the main page.
