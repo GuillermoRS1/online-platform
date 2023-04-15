@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignments</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <h1>Assignments</h1>
+    <hr>
+    <div class="content">
+    <!-- Start of the form for adding a new todo item to the database with POST method -->
+    <form method="post">
+        <p>
+            <b><label for="content">Enter assignment</label></b>
+        </p>
+        <p>
+            <!-- Input field for entering the content of the todo item -->
+            <input type="text" name="content" placeholder="Assignment"></input>
+        </p>
+        <p>
+            <b><label for="degree">State</label></b>
+        </p>
+        <p>
+            <input id="degree-0" name="degree" required type="radio" value="Complete">
+            <!-- Radio button for setting the 'degree' field to 'Complete' -->
+            <label for="degree-0">Complete</label>
+        </p>
+        <p>
+            <input id="degree-1" name="degree" required type="radio" value="Uncomplete">
+            <!-- Radio button for setting the 'degree' field to 'Uncomplete' -->
+            <label for="degree-1">Uncomplete</label>
+        </p>
+        <p>
+            Mark: <input type="number" name="mark"></input>
+        </p>
+        <!-- Submit button for submitting the form -->
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <!-- Loop through the 'todos' retrieved from Flask route -->
+    {% for todo in todos %}
+        <div class="todo">
+            <!-- Display the content and degree of each todo item -->
+            <p>{{ todo['content'] }} <i>({{ todo['degree']}}) -- Mark: {{ todo['mark']}}</i></p>
+            <!-- Form for put as complete an assigment with POST method -->
+            <form method="POST" action="{{ url_for('complete', id=todo['_id']) }}" >
+                <!-- Submit button for put an assignment as complete -->
+                <input type="submit" value="Complete">
+            </form>
+            <!-- Form for put as uncomplete an assigment with POST method -->
+            <form method="POST" action="{{ url_for('uncomplete', id=todo['_id']) }}" >
+                <!-- Submit button for put an assignment as uncomplete -->
+                <input type="submit" value="Uncomplete">
+            </form>
+            <!-- Form for deleting a todo item with POST method -->
+            <form method="POST" action="{{ url_for('delete', id=todo['_id']) }}" >
+                <!-- Submit button for deleting a todo item with a confirmation dialog -->
+                <input type="submit" value="Delete assignment"
+                    onclick="return confirm('Are you sure you want to delete this entry?')">
+            </form>
+        </div>
+    {% endfor %}
+    </div>
+</body>
+</html>
